@@ -1,0 +1,48 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: black;
+}
+.container {
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-template-rows: 20vh 70vh 10vh;
+	grid-template-areas: "header header" "main main" "footer footer";
+
+
+}
+header {
+	background-color: yellow;
+	grid-area: header;
+}
+main {
+	display: grid;
+	grid-template-columns: repeat(3 ,1fr);
+
+	background-color: gray;
+	grid-area: main;
+    justify-items: center;
+    align-items: center;
+	
+
+}
+footer {
+	background-color: red;
+	grid-area: footer;
+}
+main > .img {
+	width: 100px;
+    height: 100px;
+	background-color: black;
+}
+main > .img2 {
+    width: 100px;
+    height: 100px;
+	background-color: black;
+}
+main > .img3 {
+    width: 100px;
+    height: 100px;
+	background-color: black;
+}
